@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "fixer/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "fixer"
+  spec.name          = "fixer-rb"
   spec.version       = Fixer::VERSION
   spec.authors       = ["Taff Gao"]
   spec.email         = ["gaotongfei1995@gmail.com"]
