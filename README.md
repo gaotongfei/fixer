@@ -16,7 +16,7 @@ To convert Chinese Yuan to US Dollars, simply do this
 require 'fixer'
 
 fixer = Fixer::Request.new 'CNY'
-params = {target: 'USD', ammount: 200}
+params = {target: 'USD', ammount: 1000}
 
 fixer.transfer(params)
 ```
@@ -24,4 +24,3 @@ fixer.transfer(params)
 ```
 $ 149.75
 ```
-
