@@ -19,7 +19,6 @@ fixer = Fixer::Request.new 'CNY'
 params = {target: 'USD', ammount: 200}
 
 fixer.transfer(params)
-
 ```
 
 ```

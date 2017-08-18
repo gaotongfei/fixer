@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["gaotongfei1995@gmail.com"]
 
   spec.summary       = "API wrapper of fixer.io"
-  spec.description   = "API wrapper of fixer.io"
+  spec.description   = "API wrapper of fixer.io, find usage on https://github.com/gaotongfei/fixer"
   spec.homepage      = "https://github.com/gaotongfei/fixer"
   spec.license       = "MIT"
 
