@@ -20,14 +20,16 @@ require 'fixer'
 fixer = Fixer::Request.new 'CNY'
 params = {target: 'USD', ammount: 1000}
 
-fixer.transfer(params)
+fixer.transfer(params)  # 149.75
 $ 149.75
 ```
 
 Get currency rate
 ```
 fixer.get_rate do |rate|
-  rate.USD
+  usd = rate.USD  # 0.14975
+  rate_in_hash = rate.to_h
+  rate_in_json = rate.to_json
 end
 
 $ 0.14975
