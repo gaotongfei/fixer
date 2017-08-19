@@ -1,5 +1,7 @@
 # Fixer
 
+[![Build Status](https://travis-ci.org/gaotongfei/fixer.svg?branch=master)](https://travis-ci.org/gaotongfei/fixer)
+
 Fixer is a simple API wrapper of [http://fixer.io/](http://fixer.io/) to provide a clean way of converting currency
 
 # Install
