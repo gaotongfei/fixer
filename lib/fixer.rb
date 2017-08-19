@@ -1,3 +1,5 @@
+require 'ostruct'
+
 require 'httparty'
 
 require "fixer/version"

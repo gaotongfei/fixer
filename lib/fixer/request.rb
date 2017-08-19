@@ -2,6 +2,7 @@ module Fixer
   class Request
     attr_reader :response
     def initialize(base = Fixer.base)
+      @base = base
       base_host = "https://api.fixer.io/latest?base=#{base}"
       @response = HTTParty.get(base_host)
     end
@@ -20,6 +21,15 @@ module Fixer
       else
         raise "only hash allowed"
       end
+    end
+
+    def get_rate
+      result = JSON.parse @response.body, symbolize_names: true
+      base = {base: @base}
+      rates = result[:rates]
+      currencies = base.merge(rates)
+      r_obj = OpenStruct.new currencies
+      yield r_obj
     end
 
     private
