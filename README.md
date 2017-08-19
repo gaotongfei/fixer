@@ -24,6 +24,7 @@ fixer.transfer(params)
 $ 149.75
 ```
 
+Get currency rate
 ```
 fixer.get_rate do |rate|
   rate.USD
